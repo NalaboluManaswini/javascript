@@ -16,5 +16,15 @@ if (isNaN(marks)) {
 } else {
     alert("Grade: F");
 }
-// 2)Using else-if, check if a number is positive, negative, or zero.
+// Write a program using switch-case to print the day of the week based on a number (1–7).
+// switch(day){
+//     case 1:
+//         console.log("monday");
+//     break
+//     case 2:
+//         console.log("tuesday");
+            
+// }
+// Write a switch-case program to check vowel or consonant.
+let user = prompt("enter the word :");
 
