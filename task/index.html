@@ -3,49 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Color Changer</title>
+    <title>Even or Odd Checker</title>
+
     <style>
         body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 50px;
-            transition: background-color 0.5s;
+            font-family: Arial;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
         }
 
-        h1 {
-            margin-bottom: 30px;
+        input {
+            padding: 8px;
+            width: 200px;
+            border: 1px solid gray;
+            border-radius: 5px;
+            margin-bottom: 10px;
         }
 
         button {
-            padding: 15px 30px;
-            margin: 10px;
-            font-size: 16px;
-            cursor: pointer;
+            padding: 8px 15px;
             border: none;
-            border-radius: 8px;
+            background-color: purple;
             color: white;
+            border-radius: 5px;
+            cursor: pointer;
         }
 
-        .red { background-color: red; }
-        .green { background-color: green; }
-        .blue { background-color: blue; }
-        .yellow { background-color: goldenrod; }
-        .purple { background-color: purple; }
+        p {
+            font-size: 20px;
+            margin-top: 20px;
+        }
     </style>
 </head>
+
 <body>
 
-    <h1>Click a button to change background color</h1>
+    <h2>Even or Odd Number Checker</h2>
 
-    <button class="red" onclick="changeColor('red')">Red</button>
-    <button class="green" onclick="changeColor('green')">Green</button>
-    <button class="blue" onclick="changeColor('blue')">Blue</button>
-    <button class="yellow" onclick="changeColor('goldenrod')">Yellow</button>
-    <button class="purple" onclick="changeColor('purple')">Purple</button>
+    <!-- Input box -->
+    <input type="number" id="numInput" placeholder="Enter a number">
+
+    <!-- Button -->
+    <button onclick="checkNumber()">Check</button>
+
+    <!-- Output -->
+    <p id="result"></p>
 
     <script>
-        function changeColor(color) {
-            document.body.style.backgroundColor = color;
+        function checkNumber() {
+            let num = document.getElementById("numInput").value; // variable
+
+            if (num === "") {
+                document.getElementById("result").style.color = "red";
+                document.getElementById("result").textContent = "Please enter a number!";
+            }
+            else if (num % 2 === 0) { // even
+                document.getElementById("result").style.color = "green";
+                document.getElementById("result").textContent = num + " is an EVEN number";
+            } 
+            else { // odd
+                document.getElementById("result").style.color = "blue";
+                document.getElementById("result").textContent = num + " is an ODD number";
+            }
         }
     </script>
 

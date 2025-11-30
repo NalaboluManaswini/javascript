@@ -75,90 +75,90 @@
 // *****
 // *****
 // *****
-let row = 3;
-let columns = 5;
-for ( let  i = 1; i <= row; i++) {
-    let rowpattern = "";
-    for ( let j = 1; j <= columns; j++) {
-        rowpattern += "*";
-    }
-    console.log(rowpattern);
+// let row = 3;
+// let columns = 5;
+// for ( let  i = 1; i <= row; i++) {
+//     let rowpattern = "";
+//     for ( let j = 1; j <= columns; j++) {
+//         rowpattern += "*";
+//     }
+//     console.log(rowpattern);
 
 
-}
-Here are **simple to advanced questions** using **for loop** — perfect for practice, exams, and interviews.
+// }
+// Here are **simple to advanced questions** using **for loop** — perfect for practice, exams, and interviews.
 
----
+// ---
 
-# ✅ **Basic For Loop Questions**
+// # ✅ **Basic For Loop Questions**
 
-### **1. Print numbers from 1 to 10.**
+// ### **1. Print numbers from 1 to 10.**
 
-### **2. Print even numbers from 1 to 20.**
+// ### **2. Print even numbers from 1 to 20.**
 
-### **3. Print odd numbers from 1 to 20.**
+// ### **3. Print odd numbers from 1 to 20.**
 
-### **4. Print numbers from 10 to 1 (reverse).**
+// ### **4. Print numbers from 10 to 1 (reverse).**
 
-### **5. Print the table of 5 (5, 10, 15, … 50).**
+// ### **5. Print the table of 5 (5, 10, 15, … 50).**
 
----
+// ---
 
-# ✅ **Moderate Questions**
+// # ✅ **Moderate Questions**
 
-### **6. Print the sum of numbers from 1 to 100.**
+// ### **6. Print the sum of numbers from 1 to 100.**
 
-### **7. Print the sum of even numbers from 1 to 50.**
+// ### **7. Print the sum of even numbers from 1 to 50.**
 
-### **8. Print the product (multiplication) of numbers from 1 to 10.**
+// ### **8. Print the product (multiplication) of numbers from 1 to 10.**
 
-### **9. Print each element of an array using for loop.**
+// ### **9. Print each element of an array using for loop.**
 
-Example:
+// Example:
 
-```js
-let arr = [10, 20, 30, 40, 50];
-```
+// ```js
+// let arr = [10, 20, 30, 40, 50];
+// ```
 
-### **10. Count how many numbers from 1–50 are divisible by 3.**
+// ### **10. Count how many numbers from 1–50 are divisible by 3.**
 
----
+// ---
 
-# ✅ **Pattern Questions (Important for logic building)**
+// # ✅ **Pattern Questions (Important for logic building)**
 
-### **11. Print this pattern:**
+// ### **11. Print this pattern:**
 
-```
-*****
-*****
-*****
-```
+// ```
+// *****
+// *****
+// *****
+// ```
 
-### **12. Print this pattern:**
+// ### **12. Print this pattern:**
 
-```
-*
-**
-***
-****
-*****
-```
+// ```
+// *
+// **
+// ***
+// ****
+// *****
+// ```
 
-### **13. Print this pattern:**
+// ### **13. Print this pattern:**
 
-```
-*****
-****
-***
-**
-*
-```
+// ```
+// *****
+// ****
+// ***
+// **
+// *
+// ```
 
----
+// ---
 
-// # ✅ **Real-Life Questions**
+// // # ✅ **Real-Life Questions**
 
-// ### **14. Print all items in a shopping cart array.**
+// // ### **14. Print all items in a shopping cart array.**
 
 // ```js
 // let cart = ["Shoes", "Bag", "Watch"];
