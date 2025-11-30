@@ -1,19 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Greeting App</title>
+    <style>
+        body {
+            font-family: Arial;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        input {
+            padding: 8px;
+            width: 200px;
+            border-radius: 5px;
+            border: 1px solid gray;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 8px 15px;
+            border: none;
+            background-color: blue;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        p {
+            margin-top: 20px;
+            font-size: 20px;
+            color: green;
+        }
+    </style>
 </head>
 
 <body>
-    <center>
-        <h1>String Method😁
 
-        </h1>
-    </center>
-    <script src="./apps.js"></script>
+    <h2>Greeting Message App</h2>
+
+    <!-- Input box -->
+    <input type="text" id="nameInput" placeholder="Enter your name">
+
+    <!-- Button -->
+    <button onclick="greetUser()">Greet Me</button>
+
+    <!-- Output message -->
+    <p id="message"></p>
+
+    <script>
+        function greetUser() {
+            let userName = document.getElementById("nameInput").value; // storing input
+
+            if (userName === "") {  
+                document.getElementById("message").style.color = "red";
+                document.getElementById("message").textContent = "Please enter your name!";
+            } else {
+                document.getElementById("message").style.color = "green";
+                document.getElementById("message").textContent = "Welcome, " + userName + "!";
+            }
+        }
+    </script>
+
 </body>
-
 </html>
