@@ -10,10 +10,21 @@
 // }
 // let a= input("enter the number ")
 // let b = input("enter the number2")
-function printresult() {
-    const a = Number(document.getElementById('num1').Value)
-    const b = Number(document.getElementById('num2').Value)
-    const result = a + b;
-    console.log(result);
+// function printresult() {
+//     const a = Number(document.getElementById('num1').Value)
+//     const b = Number(document.getElementById('num2').Value)
+//     const result = a + b;
+//     console.log(result);
 
+// }
+const heading = document.getElementById("title")
+heading.style.backgroundColor="red"
+// function changetext() {
+    // document.getElementById("msg").innerText="text changed successful"
+    
+// }
+const changetext = document.getElementById('msg')
+function changetext(){
+changetext.innerText="textchanged "
 }
+
